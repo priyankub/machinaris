@@ -28,18 +28,18 @@ else
     git checkout $HASH
 
     python3 -m venv venv
-    source venv/bin/activate
     ln -s venv/bin/activate .
+    . ./activate
     
     pip install maturin
 
-    pip install ../achibip158/
-    pip install ../achipos/
-    pip install ../alvm/
-    pip install ../alvm_tools/
-    maturin develop --release -m ../alvm_rs/Cargo.toml
-    pip install ../achivdf/
-    pip install ../blspy/
+    pip install /achibip158
+    pip install /achipos
+    pip install /alvm
+    pip install /alvm_tools
+    maturin develop --release -m /alvm_rs/Cargo.toml
+    pip install /achivdf
+    pip install /blspy
 
     pip install -e .
 
@@ -51,5 +51,5 @@ else
     fi
 
     #Cleanup
-    rm -rf ../alvm ../alvm_rs ../alvm_tools ../achipos ../achibip158 ../achivdf ../blspy
+    rm -rf /alvm /alvm_rs /alvm_tools /achipos /achibip158 /achivdf /blspy
 fi
