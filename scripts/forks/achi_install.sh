@@ -15,13 +15,13 @@ else
     sudo apt install -y build-essential cmake git python3 python3-pip python3-venv libssl-dev libboost-all-dev libgmp-dev clang rustc pkg-config cargo
 
     git clone --branch ${ACHI_BRANCH} --recurse-submodules https://github.com/priyankub/achi-blockchain.git /achi-blockchain
-    git clone https://github.com/priyankub/alvm.git
-    git clone https://github.com/priyankub/alvm_rs.git
-    git clone https://github.com/priyankub/alvm_tools.git
-    git clone https://github.com/priyankub/achipos.git
-    git clone https://github.com/priyankub/achibip158.git
-    git clone https://github.com/priyankub/achivdf.git
-    git clone https://github.com/priyankub/blspy.git
+    git clone https://github.com/priyankub/alvm.git /alvm
+    git clone https://github.com/priyankub/alvm_rs.git /alvm_rs
+    git clone https://github.com/priyankub/alvm_tools.git /alvm_tools
+    git clone https://github.com/priyankub/achipos.git /achipos
+    git clone https://github.com/priyankub/achibip158.git /achibip158
+    git clone https://github.com/priyankub/achivdf.git /achivdf
+    git clone https://github.com/priyankub/blspy.git /blspy
 
     cd /achi-blockchain
     git submodule update --init mozilla-ca 
