@@ -30,6 +30,9 @@ else
     python3 -m venv venv
     ln -s venv/bin/activate .
     . ./activate
+
+    python -m pip install --upgrade pip
+    python -m pip install wheel
     
     pip install maturin
 
@@ -42,7 +45,9 @@ else
     pip install /blspy
 
     pip install -e .
-
+    
+    deactivate
+    
     if [ ! -d /chia-blockchain/venv ]; then
         cd /
         rmdir /chia-blockchain
