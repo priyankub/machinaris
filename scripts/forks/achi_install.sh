@@ -5,7 +5,7 @@
 
 ACHI_BRANCH=$1
 # On 2024-02-08
-HASH=e3ca475efb3d7267d3a2eedef8b4897d129aeb5d
+HASH=e3e48072c04540b17d0c5b01d389f35bc37799c0
 
 if [ -z ${ACHI_BRANCH} ]; then
     echo 'Skipping Achi install as not requested.'
