@@ -2,14 +2,69 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [2.5.0] - 2025-01-04
+### Added
+ - New check to restart a farmer if pooling and no partials have been observed in the last hour.  Thanks @aweigold!
+### Changed
+### Updated
+ - [Chia](https://github.com/Chia-Network/chia-blockchain/releases/tag/2.5.0) to v2.5.0 - misc improvements, see their release notes.
+ - [Gigahorse](https://github.com/madMAx43v3r/chia-gigahorse/releases/tag/v2.5.0.giga36) to v2.5.0.giga36.  NOTE: Only for AMD64, so ARM64 uses an old version.
+### Notes
+ - Chia X.Y.0 releases have become quite buggy, so I am delaying a matching Machinaris release by weeks for additional testing.
+
+## [2.4.4] - 2024-10-17
+### Added
+### Changed
+### Updated
+ - [Chia](https://github.com/Chia-Network/chia-blockchain/releases/tag/2.4.4) to v2.4.4 - misc improvements, see their release notes.
+
+## [2.4.3] - 2024-08-27
+### Added
+### Changed
+### Updated
+ - [Chia](https://github.com/Chia-Network/chia-blockchain/releases/tag/2.4.3) to v2.4.3 - misc improvements, see their release notes.
+ - [Gigahorse](https://github.com/madMAx43v3r/chia-gigahorse/releases/tag/v2.4.1.giga36) to v2.4.1.giga36.
+
+## [2.4.1] - 2024-07-04
+### Added
+### Changed
+### Updated
+ - [Chia](https://github.com/Chia-Network/chia-blockchain/releases/tag/2.4.1) to v2.4.1 - misc improvements, see their release notes.
+ - [Gigahorse](https://github.com/madMAx43v3r/chia-gigahorse/releases/tag/v2.4.0.giga36) to v2.4.0.giga36.
+
+## [2.4.0] - Unreleased
+### Added
+### Changed
+### Updated
+ - [Chia](https://github.com/Chia-Network/chia-blockchain/releases/tag/2.4.0) to v2.4.0 - misc improvements, see their release notes.
+### Notes
+ - Chia X.Y.0 releases have become quite buggy so I'm generally not bothering to release a full Machinaris X.Y.0 to match. 
+
+## [2.3.0] - 2024-05-06
+### Added
+ - Gigahorse: Optionally launch `chia-exporter` [metrics endpoint](https://github.com/Chia-Network/chia-exporter) for Prometheus reporting if env var `chia_exporter=true` is set.
+### Changed
+### Updated
+ - [Chia](https://github.com/Chia-Network/chia-blockchain/releases/tag/2.3.0) to v2.3.0 - misc improvements, see their release notes.
+ - [Gigahorse](https://github.com/madMAx43v3r/chia-gigahorse/releases/tag/v2.3.0.giga36) to v2.3.0.giga36.
+### Notes
+ - Support for new blockchains and tools DOES NOT imply my endorsement for them.  *Only run those you are comfortable with.*
+
+## [2.2.1] - 2024-03-06
+### Updated
+ - [Chia](https://github.com/Chia-Network/chia-blockchain/releases/tag/2.2.1) to v2.2.1 - possible fixes for serious problems in v2.2.0?
+### Notes
+ -  Updated potentially buggy Chia software DOES NOT imply my endorsement.  *Only upgrade when you are comfortable.*
+
+## [2.2.0] - 2024-02-29
+**NOTE** CNI Corporate pulled retracted their v2.2.0 release after a day due to serious bugs.  Use v2.2.1 instead or just delay upgrading.
 ### Added
  - Support for Achi blockchain.  Requires its own plots (like Chives), you'll have to plot separately if interested. Thanks @priyankub
  - Optionally launch Chia Data Layer services (https://docs.chia.net/guides/datalayer-user-guide/) if env var `chia_data=true` is set.
 ### Changed
  - Harvester mode will now optionally also run chia-exporter for Prometheus results.
 ### Updated
- - [Chia](https://github.com/Chia-Network/chia-blockchain/releases/tag/2.1.5) to v2.1.5 - misc improvements, see their release notes.
+ - [Chia](https://github.com/Chia-Network/chia-blockchain/releases/tag/2.2.0) to v2.2.0 - misc improvements, see their release notes.
  - [Cactus](https://github.com/Cactus-Network/cactus-blockchain/releases/tag/v2.1.4) to v2.1.4.
  - [Gigahorse](https://github.com/madMAx43v3r/chia-gigahorse/releases/tag/v2.1.4.giga26) to v2.1.4.giga26.
  - [Wheat](https://github.com/wheatnetwork/wheat-blockchain/releases/tag/2.1.6) to v2.1.6
@@ -18,7 +73,7 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [2.1.4] - 2024-01-11
 ### Added
- - Optionally launch `chia-exporter` [metrics endpoint](https://github.com/Chia-Network/chia-exporter) for Prometheus reporting if env var `chia_exporter=true` is set.
+ - Chia: Optionally launch `chia-exporter` [metrics endpoint](https://github.com/Chia-Network/chia-exporter) for Prometheus reporting if env var `chia_exporter=true` is set.
  - Support for running Gigahorse containers on arm64 architectures such as Raspberry Pi.
  - Main dashboard page can now be pinned (Pin Icon) to display only a blockchain of interest, rather than rotating through each in turn.
 ### Changed
@@ -26,7 +81,7 @@ All notable changes to this project will be documented in this file. The format 
  - Fix for Bladebit GPU plotting jobs taking a minute to display on Plotting page on job start.  Should now be seconds only.
 ### Updated
  - [Chia](https://github.com/Chia-Network/chia-blockchain/releases/tag/2.1.4) to v2.1.4 - misc improvements, see their release notes.
- - [Gigahorse](https://github.com/madMAx43v3r/chia-gigahorse/releases/tag/v2.1.3.giga26) to v2.1.3.giga26.
+ - [Gigahorse](https://github.com/madMAx43v3r/chia-gigahorse/releases/tag/v2.1.3.giga31) to v2.1.3.giga31.
 
 ## [2.1.3] - 2023-12-19
 ### Updated
